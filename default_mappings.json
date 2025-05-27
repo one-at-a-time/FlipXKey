@@ -1,0 +1,10 @@
+{
+    "CapsLock": "Esc",
+    "LWin": "LCtrl",
+    "a": "Left",
+    "w": "Up",
+    "s": "Down",
+    "d": "Right",
+    "q": "PageUp",
+    "e": "PageDown"
+}
