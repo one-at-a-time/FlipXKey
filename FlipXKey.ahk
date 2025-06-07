@@ -7,7 +7,7 @@ Persistent
 ; 🧩 Load custom JSON mappings from file
 mappingFile1 := A_ScriptDir . "\custom_mappings.json"
 jsonString1 := FileRead(mappingFile1)
-    
+
 ; 🧩 Load default JSON mappings from file
 mappingFile2 := A_ScriptDir . "\default_mappings.json"
 jsonString2 := FileRead(mappingFile2)
@@ -16,7 +16,7 @@ jsonString2 := FileRead(mappingFile2)
 try {
     MapConfig := Jxon_Load(&jsonString1)
 } catch {
-    MsgBox("Error loading mappings.json. Using default mappings.")
+    MsgBox("Error loading custom mappings. Using default mappings.")
     MapConfig := Jxon_Load(&jsonString2)
 }
 
